@@ -464,8 +464,9 @@
         .photo-item img {
             width: 100%;
             height: 250px;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
+            background-color: #f8f8f8;
         }
         .photo-item p {
             padding: 1rem;
@@ -895,7 +896,7 @@
 
 <script>
 // Установите вашу дату начала отношений (год, месяц-1, день, часы, минуты, секунды)
-const startDate = new Date(2025, 5, 25, 22, 0, 0); // 25 мая 2022, 15:30
+const startDate = new Date(2025, 4, 25, 22, 0, 0); // 25 мая 2025, 22:00
 
 function updateTimer() {
     const now = new Date();
@@ -1512,4 +1513,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
-
